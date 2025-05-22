@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контактная информация</title>
+    <link rel = "stylesheet" href = "123.css">
+</head>
+<body>
+  <header>
+    <h1>Часто задваемые вопросы</h1>
+    <nav>
+      <ul>
+        <li><a href = "home.html">Главная</a></li>
+        <li><a href = "about_project.html">О проекте</a></li>
+        <li><a href = "journal.html">Журнал</a></li>
+        <li><a href = "faq.html">Контактная информация</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--<div>
+      <h2>FAQ</h2>
+      <div class = "item_faq" onclick = "toggleAnswers(this)">
+        <p class = "questions">adwadwadwa</p>
+        <div class = "answers">
+          sfdgjsdlkjffeksflksdkfdkld
+        </div>
+      </div>
+    </div>-->
+
+    <div class = "container_faq">
+      <h2>FAQ</h2>
+
+      <!--Вопрос 1-->
+      <details>
+        <summary>Где взять ссылку на личный кабинете?</summary>
+        <p>Все студенты могут получить ссылку на личный кабинет на официальном сайте <a href = "https://mospolytech.ru">МосПолитеха</a>.</p>
+      </details>
+
+      <!--Вопрос 2-->
+      <details>
+        <summary>Как проверить успеваемость и оценки?</summary>
+        <p>Для этого нужно зайти в личный кабинет и перейти в раздел меню "Расписание".</p>
+      </details>
+
+      <!--Вопрос 2-->
+      <details>
+        <summary>Как проверить успеваемость и оценки?</summary>
+        <p>Для этого нужно зайти в личный кабинет и перейти в раздел меню "Расписание".</p>
+      </details>
+
+    </div>
+
+
+  </main>
+
+  <footer>
+    © 2025 Московский Политех
+  </footer>
+
+  <!--<script>
+    document.querySelectorAll("details").forEach((detail) => {
+      detail.addEventListener("toggle", event => {
+        if (event.target.open){
+          const answers = detail.querySelector('p');
+          answers.style.animationPlayState = "running";
+          answers.style.opacity = 0;
+        }
+        else {
+          const answers = detail.querySelector('p');
+          answers.style.animationPlayState = "paused";
+        }
+      });
+    });
+  </script>-->
+
+
+
+  <!--<script>
+    function toggleAnswers(items) {
+      const answers = items.querySelector(".answers");
+
+      if (answers.style.display === "none") {
+        answers.classList.add(".showAnswers");
+        answers.style.display = "block";
+      }
+      else {
+        answers.style.display = "none";
+      }
+    }
+  </script>-->
+</body>
+</html>
